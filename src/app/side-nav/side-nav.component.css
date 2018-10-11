@@ -1,0 +1,193 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #fafafa;
+        }
+
+        a i p {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.3em;
+            font-weight: 400;
+            line-height: 1.7em;
+            color: white;
+        }
+        a i button {
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.0em;
+            font-weight: 400;
+            line-height: 1.7em;
+            color: white;
+        }
+.chumicon{
+    border: 2px;
+    border-color: white;
+    border-style: solid;
+    border-top: 6px;
+    border-left: 6px;
+    border-right: 6px;
+}
+
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 120px;
+    background-color: lightcoral;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  .sidebar a {
+    display: block;
+    color: black;
+    margin-bottom: 40px;
+    text-decoration: none;
+    text-align:center;
+  }
+   
+ 
+  
+  
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+  
+  .avat{
+      width: 100px;
+      height: 100px;
+      
+      border-radius: 50px;
+      background-color: white;
+  }
+
+.dropdown-menu{
+  width: 100%;
+  font-size:10px;
+  
+}
+
+.lock:hover .icon-unlock, .lock .icon-lock {
+    display: none;
+}
+.lock:hover .icon-lock{
+    display: inline;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+  .collapsible {
+    background-color: lightcoral;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: lightcoral;
+    color: white
+}
+
+
+
+
+
+/* Acordeon styles */
+.tab {
+  position: relative;
+  margin-bottom: 1px;
+  width: 100%;
+  color: #fff;
+  overflow: hidden;
+}
+input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+label {
+  position: relative;
+  display: block;
+  padding: 0 0 0 1em;
+  font-weight: bold;
+  line-height: 3;
+  cursor: pointer;
+}
+.pink label {
+  background: #f08080;
+}
+.tab-content {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height .35s;
+  -o-transition: max-height .35s;
+  transition: max-height .35s;
+}
+.pink .tab-content {
+  background: #f08080;
+}
+.tab-content p {
+  margin-left: 2em;
+}
+/* :checked */
+input:checked ~ .tab-content {
+  max-height: 20em;
+}
+/* Icon */
+label::after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  line-height: 3;
+  text-align: center;
+  -webkit-transition: all .35s;
+  -o-transition: all .35s;
+  transition: all .35s;
+}
+input[type=checkbox] + label::after {
+  content: "+";
+}
+input[type=checkbox]:checked + label::after {
+  transform: rotate(315deg);
+}
+/* Accordeon Style END*/
+/*
+#settingshover {
+    display: none;
+}
+#settings:hover + #settingshover {
+    display: inherit;
+}
+#lock:hover #icon-unlock,
+#lock #icon-lock {
+    display: none;
+}
+#lock:hover #icon-lock {
+    display: inline;
+}
+*/
+/*
+body {
+    display: block; 
+}
+.collapsible2:focus ~ .cont {
+  display: none;
+}
+.collapsible1:focus ~ .cont {
+  display: block;
+}
+  */

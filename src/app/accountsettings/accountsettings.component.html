@@ -1,0 +1,38 @@
+
+<app-nav-bar></app-nav-bar>  
+
+<app-side-nav></app-side-nav>    
+
+ 
+
+
+
+<div class="main">
+    
+
+    
+      
+  <h2>{{ getComponentName() + '.title' | translate }}</h2>
+  <p>{{ getComponentName() + '.testText' | translate }}</p>
+  <p>{{ getComponentName() + '.testTextWithVariable' | translate: {name: 'Test Name'} }}</p>
+  <p>{{ getComponentName() + '.testTextWithMultipleVariables' | translate: { variable1: 'Variable 1', variable2: 'Variable2'} }}</p>
+   <!--<form [formGroup]="formGroup">
+        <div class="col-sm-4">
+            <dynamic-form [question]="getQuestion('username')" [form]="formGroup"></dynamic-form>
+            <dynamic-form [question]="getQuestion('password')" [form]="formGroup"></dynamic-form>
+            <dynamic-form [question]="getQuestion('confirmPassword')" [form]="formGroup"></dynamic-form>
+        </div>
+        <button [disabled]="isDisabled()" class="btn btn-danger">{{ getComponentName() + '.buttonText' | translate }}</button>
+    </form>--> 
+    
+    
+    
+        
+        
+
+    
+</div> 
+
+
+
+
