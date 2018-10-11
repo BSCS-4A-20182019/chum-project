@@ -29,6 +29,7 @@ import { CoreResolver } from './shared/services/core.resolver';
 import { LoginComponent } from './login/login.component';
 import { AccountsettingsComponent } from './accountsettings/accountsettings.component';
 import { EditProfileComponent } from './edit-profile/edit-profile.component';
+import { NotificationComponent } from './notification/notification.component';
 
 export function HttpLoaderFactory(httpClient: HttpClient) {
     return new TranslateHttpLoader(httpClient, "/assets/i18n/", ".json");
@@ -47,7 +48,8 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     SideNavComponent,
     LoginComponent,
     AccountsettingsComponent,
-    EditProfileComponent
+    EditProfileComponent,
+    NotificationComponent
 
   ],
   imports: [
