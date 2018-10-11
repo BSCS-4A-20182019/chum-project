@@ -1,0 +1,104 @@
+
+
+var req_like = 3;
+var req_list = 3;
+var req_share =1;
+
+var like = query;
+var list = query;
+var share = query;
+
+lvl5 = 5;
+lvl10 = 10;
+lvl15 = 15;
+lvl25 = 20;
+lvl45 = 25;
+lvl65 = 30;
+lvl80 = 35;
+lvl90 = 40;
+lvl100 = 45;
+
+lvlcount = 5;
+
+int chum_level = query;
+
+do
+{
+	if (req_like>=like && req_list>=list && req_share>=share){
+		chum_level++;
+		req_like+=req_like;
+		req_share+=req_share;
+		req_list+=req_list;
+		Update (chum_level)
+		
+		Select updated chum_level
+
+		if (chum_level===lvlcount){
+		case 5 {
+		req_like+=4;
+		req_share+=2;
+		req_list+=4;
+		lvlcount+=5;
+		}
+
+		case 11 {
+		req_like+=5;
+		req_share+=3;
+		req_list+=5;
+		lvlcount+=5;
+		}
+
+		case 15 {
+		req_like+=6;
+		req_share+=4;
+		req_list+=6;
+		lvlcount+=5;
+		}
+
+		case 25 {
+		req_like+=7;
+		req_share+=5;
+		req_list+=7;
+		lvlcount+=5;
+		}
+		case 45 {
+		req_like+=8;
+		req_share+=6;
+		req_list+=8;
+		lvlcount+=5;
+		}
+		case 65 {
+		req_like+=9;
+		req_share+=6;
+		req_list+=9;
+		lvlcount+=5;
+		}
+		case 80 {
+		req_like+=10;
+		req_share+=7;
+		req_list+=10;
+		lvlcount+=5;
+		}
+		case 90{
+		req_like+=11;
+		req_share+=8;
+		req_list+=11;
+		lvlcount+=5;
+		}
+		case 100 {
+		req_like+=12;
+		req_share+=9;
+		req_list+=12;
+		lvlcount+=5;
+		}
+		
+	}	
+		
+	}
+	
+
+
+	
+	
+}
+while (chum_level<=100);
