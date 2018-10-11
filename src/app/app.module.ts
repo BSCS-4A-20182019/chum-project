@@ -28,6 +28,7 @@ import { QuestionsService } from './shared/services/questions.service';
 import { CoreResolver } from './shared/services/core.resolver';
 import { LoginComponent } from './login/login.component';
 import { AccountsettingsComponent } from './accountsettings/accountsettings.component';
+import { EditProfileComponent } from './edit-profile/edit-profile.component';
 
 export function HttpLoaderFactory(httpClient: HttpClient) {
     return new TranslateHttpLoader(httpClient, "/assets/i18n/", ".json");
@@ -45,7 +46,8 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     NavBarComponent,
     SideNavComponent,
     LoginComponent,
-    AccountsettingsComponent
+    AccountsettingsComponent,
+    EditProfileComponent
 
   ],
   imports: [
