@@ -24,6 +24,7 @@ export class LoginComponent extends AbstractFormComponent {
 
   getComponentName(){
     return 'login';
+    
   }
   
   isDisabled(): boolean {

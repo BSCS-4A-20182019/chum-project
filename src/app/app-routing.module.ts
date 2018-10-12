@@ -1,11 +1,11 @@
 import {RouterModule, Routes} from '@angular/router';
 import {MainComponent} from './main/main.component';
 import {NgModule} from '@angular/core';
-import {ProfileComponent} from './profile/profile.component';
-import {SignupComponent} from './profile/signup.component';
 import {LoginComponent} from './login/login.component';
 
 import { CoreResolver } from './shared/services/core.resolver';
+import { SignupComponent } from './signup/signup.component';
+import {TimelineComponent} from './timeline/timeline.component';	
 
 const appRoutes: Routes = [
   {
@@ -14,8 +14,10 @@ const appRoutes: Routes = [
   	children: [
 	  { path: '', redirectTo: 'login', pathMatch: 'full' },
 	  { path: 'main', component: MainComponent }, // TODO: add canActivate to guard the component
-	  { path: 'login', component: LoginComponent },
-	  { path: 'signup', component: SignupComponent }
+		{ path: 'login', component: LoginComponent },
+		{ path: 'signup', component: SignupComponent },
+		{ path: 'timeline', component: TimelineComponent }
+	  
   ]
   }
 ];

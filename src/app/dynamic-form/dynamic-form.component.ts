@@ -5,10 +5,12 @@ import { Question } from '../shared/models/question';
 
 @Component({
   'selector': 'dynamic-form',
-  'templateUrl': './dynamic-form.component.html'
+  'templateUrl': './dynamic-form.component.html',
+  styleUrls: ['./dynamic-form.component.css']
 })
 export class DynamicFormComponent {
   @Input() question: Question;
   @Input() form: FormGroup;
+  
   
 }

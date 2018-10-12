@@ -1,20 +1,21 @@
 <div class="body">
-<div class="pic img-responsive" style="background-image: url(/src/assets/images/ca2.jpg); width : 1368px; height: 700px">
-
-  <div class="login">
-    <form [formGroup]="formGroup">
-        <div class="col-sm-3" >
-          <div class = "loginsubmit">
-            <dynamic-form [question]="getQuestion('username')" [form]="formGroup" ></dynamic-form>
-            <dynamic-form [question]="getQuestion('password')" [form]="formGroup"></dynamic-form>
-          </div>
+  <div class="pic img-responsive" style="background-image: url(/src/assets/images/ca2.jpg);">
+    <div class="container">
+    <div class="login">
+      <form [formGroup]="formGroup">
+          <div class="col-sm-3" >
+            <div class = "loginsubmit">
+              <dynamic-form [question]="getQuestion('usernameLogin')" [form]="formGroup" ></dynamic-form>
+              <dynamic-form [question]="getQuestion('passwordLogin')" [form]="formGroup"></dynamic-form>
+              <br>
+              <button class="btn btn-success btn-block" [routerLink]="['../main']" >{{ getComponentName() + '.loginbutton' | translate }}</button>
+              <br>
+              <a href="/chum/signup" id="link">You don't have an account?</a>
+              </div>
+            </div>
+          </form>
         </div>
-        <div class="loginbutton">
-          <button [disabled]="isDisabled()" class="btn btn-success">
-            {{ getComponentName() + '.loginbutton' | translate }}
-          </button>
-        </div>
-  </form>
-</div>
-</div>
-</div>
+      </div>
+    </div>
+  </div>
+  

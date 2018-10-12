@@ -18,13 +18,15 @@
     ],
     "login": [
         {
-            "controlName": "username",
+            "controlName": "usernameLogin",
             "label": "Username",
+            "placeholder": "Enter Username",
             "type": "text"
         },
         {
-            "controlName": "password",
+            "controlName": "passwordLogin",
             "label": "Password",
+            "placeholder": "Enter Password",
             "type": "password"
         }
         
@@ -33,26 +35,42 @@
         {
             "controlName": "email",
             "label": "Email",
+            "placeholder": "Enter Email",
             "type": "text"
     },
     {
         "controlName": "fullname",
         "label": "Full Name",
+        "placeholder": "Enter Full Name",
         "type": "text"
     },
     {
-        "controlName": "username",
+        "controlName": "usernameSignup",
         "label": "Username",
+        "placeholder": "Enter Username",
         "type": "text"
     },
     {
-        "controlName": "password",
+        "controlName": "birthday",
+        "label": "Birthdate",
+        "type": "date"
+    },
+    {
+        "controlName": "gender",
+        "label": "Gender",
+        "type": "mat-radio-button"
+
+    },
+    {
+        "controlName": "passwordSignup",
         "label": "Password",
+        "placeholder": "Enter Password",
         "type": "password"
     },
     {
         "controlName": "confirmpw",
         "label": "Confirm Password",
+        "placeholder":"Confirm Password",
         "type": "password"
     }
     ]

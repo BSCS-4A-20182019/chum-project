@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { ProfileComponent } from './profile/profile.component';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
 
 
@@ -14,7 +13,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { DynamicFormComponent } from './dynamic-form/dynamic-form.component';
 import { HeaderComponent } from './header-footer/header.component';
 import { FooterComponent } from './header-footer/footer.component';
-import { SignupComponent } from './profile/signup.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { SideNavComponent } from './side-nav/side-nav.component';
 
@@ -29,6 +27,8 @@ import { CoreResolver } from './shared/services/core.resolver';
 import { LoginComponent } from './login/login.component';
 import { AccountsettingsComponent } from './accountsettings/accountsettings.component';
 import { EditProfileComponent } from './edit-profile/edit-profile.component';
+import { SignupComponent } from './signup/signup.component';
+import { TimelineComponent } from './timeline/timeline.component';
 
 export function HttpLoaderFactory(httpClient: HttpClient) {
     return new TranslateHttpLoader(httpClient, "/assets/i18n/", ".json");
@@ -37,17 +37,17 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
 @NgModule({
   declarations: [
     AppComponent,
-    ProfileComponent,
     MainComponent,
     DynamicFormComponent,
     HeaderComponent,
     FooterComponent,
-    SignupComponent,
     NavBarComponent,
     SideNavComponent,
     LoginComponent,
     AccountsettingsComponent,
-    EditProfileComponent
+    EditProfileComponent,
+    SignupComponent,
+    TimelineComponent
 
   ],
   imports: [

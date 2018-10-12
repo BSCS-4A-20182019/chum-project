@@ -1,0 +1,72 @@
+.main {
+  
+    background-color: lightgray;
+    padding-left: 250px;
+    padding-top: 100px;
+    height: 1500px; /* Used in this example to enable scrolling */
+  }
+
+  .header {
+      height: 800px;
+      width: 850px;
+      background-color: white;
+      margin-left: 100px;
+  }
+
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto 500px;
+    width: 20px;
+
+  }
+  
+  .pic {
+    grid-area: 1 / 1 / span 5 / span 3;
+
+    
+  }
+.colorfont{
+	color: lightcoral;
+	font-size: 30px;
+	text-align: left;
+	padding-left: 50px;
+}
+.style2{
+	font-size: 15px;
+	padding-top: 10px;
+    margin-right: 10px;
+    padding-left: 50px;
+}
+.panel{
+	width: 850px;
+    padding: 20px;	
+    margin-left: 70px;
+}
+img{
+    float: left;
+}
+.name{
+    font-weight: bold;
+    padding-left: 50px;
+    padding-top: 35px;
+    font-size: 40px;
+}
+
+.buttonpost{
+  box-shadow: 3px 3px lightcoral;
+  font-weight: bold;
+  margin-left: 440px;
+  margin-top: 10px;
+  width: 30%;
+}
+.writepost{
+     margin-left: 55px;
+ }
+.buttonpic{
+    box-shadow: 3px 3px lightcoral;
+    font-weight: bold;
+    margin-left: 440px;
+    margin-top: 10px;
+    width: 30%;
+  }
