@@ -3,6 +3,7 @@
         {
             "controlName": "username",
             "label": "Username",
+            "placeholder": "Username",
             "type": "text"
         },
         {
@@ -18,12 +19,14 @@
     ],
     "login": [
         {
-            "controlName": "username",
+            "controlName": "loginusername",
             "label": "Username",
+            "placeholder": "Username",
             "type": "text"
         },
         {
-            "controlName": "password",
+            "controlName": "loginpassword",
+            "placeholder": "Password",
             "label": "Password",
             "type": "password"
         }
@@ -54,6 +57,16 @@
         "controlName": "confirmpw",
         "label": "Confirm Password",
         "type": "password"
+    },
+    {
+        "controlName": "birthday",
+        "label": "Birthday",
+        "type": "date"
+    },
+    {
+        "controlName": "gender",
+        "label": "Gender",
+        "type": "text"  
     }
     ]
 }

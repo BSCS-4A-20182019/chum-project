@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { AbstractFormComponent } from '../shared/abstract-component/abstract-form.component';
 import {QuestionsService} from '../shared/services/questions.service';
 import {Router} from '@angular/router';
@@ -26,9 +26,9 @@ export class LoginComponent extends AbstractFormComponent {
     return 'login';
   }
   
-  isDisabled(): boolean {
-    return this.formGroup.value['username'] !== undefined &&
-    this.formGroup.value['password'] !== undefined;
+  isDisabled(): Boolean {
+    return this.formGroup.value['loginusername'] !== undefined &&
+    this.formGroup.value['loginpassword'] !== undefined;
   } 
 
 

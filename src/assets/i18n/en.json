@@ -7,7 +7,8 @@
         "buttonText": "Submit",
         "modal": {
             "changeProfilePicture": "Change profile picture"
-        },
+        }
+    },
 
     "login": {
         "username": "Username",
@@ -23,6 +24,6 @@
         "confirmpw": "Confirm Password"
 
     }
-}
+
 }
 

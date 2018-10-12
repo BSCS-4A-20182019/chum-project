@@ -5,14 +5,15 @@
     <form [formGroup]="formGroup">
         <div class="col-sm-3" >
           <div class = "loginsubmit">
-            <dynamic-form [question]="getQuestion('username')" [form]="formGroup" ></dynamic-form>
-            <dynamic-form [question]="getQuestion('password')" [form]="formGroup"></dynamic-form>
+            <dynamic-form [question]="getQuestion('loginusername')" [form]="formGroup" ></dynamic-form>
+            <dynamic-form [question]="getQuestion('loginpassword')" [form]="formGroup"></dynamic-form>
+            
           </div>
-        </div>
-        <div class="loginbutton">
-          <button [disabled]="isDisabled()" class="btn btn-success">
-            {{ getComponentName() + '.loginbutton' | translate }}
-          </button>
+          <div class = "buttonsubmt">
+            <button [disabled]="isDisabled()" class="btn btn-success">
+              {{ getComponentName() + '.loginbutton' | translate }}
+            </button>
+          </div>
         </div>
   </form>
 </div>
