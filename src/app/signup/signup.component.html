@@ -13,7 +13,7 @@
               <dynamic-form [question]="getQuestion('passwordSignup')" [form]="formGroup"></dynamic-form>
               <dynamic-form [question]="getQuestion('confirmpw')" [form]="formGroup" ></dynamic-form>
               <br>
-              <button (click)="disable = true" class="btn btn-success btn-block" >{{ getComponentName() + '.signupbutton' | translate }}</button>
+              <button class="btn btn-success btn-block"  [routerLink]="['../login']" >{{ getComponentName() + '.signupbutton' | translate }}</button>
               </div>
             </div>
           </form>

@@ -58,7 +58,8 @@
     {
         "controlName": "gender",
         "label": "Gender",
-        "type": "mat-radio-button"
+        "placeholder": "Male/Female",
+        "type": "text"
 
     },
     {
