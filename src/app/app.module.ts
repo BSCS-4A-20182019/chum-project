@@ -33,6 +33,7 @@ import { LoginService } from './shared/services/login.service';
 import { LogoutService } from './shared/services/logout.service';
 import { UserDetailsService } from './shared/services/user-details.service';
 import { User } from './shared/models/user.model';
+import { ChumrequestComponent } from './chumrequest/chumrequest.component';
 
 export function HttpLoaderFactory(httpClient: HttpClient) {
     return new TranslateHttpLoader(httpClient, "/assets/i18n/", ".json");
@@ -51,7 +52,8 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     AccountsettingsComponent,
     EditProfileComponent,
     SignupComponent,
-    TimelineComponent
+    TimelineComponent,
+    ChumrequestComponent
 
   ],
   imports: [
