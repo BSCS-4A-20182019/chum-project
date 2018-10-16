@@ -15,6 +15,10 @@ export class UserDetailsService  {
     getUserName(): string {
         return this.user.username;
     }
+    
+    getUserPassword(): string {
+        return this.user.password;
+    }
 
     getName(): string {
         return `${this.user.firstName} ${this.user.lastName}`;

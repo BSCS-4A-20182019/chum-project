@@ -30,6 +30,7 @@ import { EditProfileComponent } from './edit-profile/edit-profile.component';
 import { SignupComponent } from './signup/signup.component';
 import { TimelineComponent } from './timeline/timeline.component';
 import { LoginService } from './shared/services/login.service';
+import { LogoutService } from './shared/services/logout.service';
 import { UserDetailsService } from './shared/services/user-details.service';
 import { User } from './shared/models/user.model';
 
@@ -74,7 +75,8 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     CoreResolver,
     LoginService,
     UserDetailsService,
-    User
+    User,
+    LogoutService
   ],
   exports: [
     TranslateModule

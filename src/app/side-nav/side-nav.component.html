@@ -1,8 +1,8 @@
 <div class="sidebar container">
     
-    <a class="chumicon"><img src="/src/assets/images/chum2.PNG" style="height: 70px; width: 70px; padding: 20px: 10px; margin-bottom: 8px; "></a>
+    <a class="chumicon"><img src="/src/assets/images/chum2.PNG" style="height: 70px; width: 70px; padding: 20px, 10px; margin-bottom: 8px;"></a>
 
-    
+    <button (click)="doLogOut()">LogOut</button>
     
   <a><img class="avat" src="/src/assets/images/prof.png" style="height: 50px; width: 50px; ">
     </a>
@@ -48,7 +48,7 @@
    
         <a class="lock" >
             <i class="icon-unlock">
-                <button id="show" class="collapsible" ><img src="/src/assets/images/settings.PNG" style="height: 35px; width: 75px"><p>SETTINGS</p></button>
+                <button id="show" class="collapsible" (click)="doLogOut()"><img src="/src/assets/images/settings.PNG" style="height: 35px; width: 75px"><p>SETTINGS</p></button>
                 
             </i>
             <i class="icon-lock">
@@ -58,7 +58,7 @@
             <div id="showHide" >
                     <a style="color: white;" href="#"><span class="glyphicon glyphicon-edit"></span>&nbsp;&nbsp; EDIT PROFILE</a>
                     <a style="color: white;" href="#"><span class="glyphicon glyphicon-wrench"></span>&nbsp;&nbsp; ACCOUNT <br>&nbsp;&nbsp;&nbsp; SETTINGS</a>
-                    <a style="color: white; " href="#"><span class="glyphicon glyphicon-log-out"></span>&nbsp;&nbsp; LOGOUT</a>
+                    <a style="color: white; " [routerLink]="" (click)="doLogOut()"><span class="glyphicon glyphicon-log-out"></span>&nbsp;&nbsp; LOGOUT</a>
                   
               </div>
         </a>

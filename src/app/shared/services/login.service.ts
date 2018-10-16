@@ -19,6 +19,7 @@ export class LoginService {
 
     private navigateToHome() {
         this.route.navigateByUrl('/chum/main');
+        
     }
 
 }
