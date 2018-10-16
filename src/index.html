@@ -9,7 +9,35 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
    
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  
+  <script>
+  $(document).ready(function() {
+       
+       $("button[name='addDom']").click(function() {
+           var domElement = $('<div class="module_holder"></div>');
+           
+           domElement.appendTo('#here');
+       });
+       
+   });
+  </script>
+  <style>
+ 
+ .module_holder {
+    background-color: white;
+    width: 55%;
+    height: 100px;
+    margin-top: 25px;
     
+}
+  </style>
+<!--DYNAMIC ADD-->
+
+
+
   <!-- added a comment to integrate later on the dropdown features -->
     
   <meta name="viewport" content="width=device-width, initial-scale=1">
