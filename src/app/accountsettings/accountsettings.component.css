@@ -1,0 +1,7 @@
+.main {
+  
+    background-color: lightgray;
+    padding-left: 250px;
+    padding-top: 100px;
+    height: 620px; /* Used in this example to enable scrolling */
+  }
