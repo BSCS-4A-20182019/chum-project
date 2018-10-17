@@ -58,8 +58,8 @@
     {
         "controlName": "gender",
         "label": "Gender",
-        "placeholder": "Male/Female",
-        "type": "text"
+        "options": ["male","female"],
+        "type": "radio"
 
     },
     {

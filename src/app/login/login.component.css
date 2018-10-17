@@ -25,9 +25,23 @@
     text-align: center;  
 }
 #link{
-    text-decoration: underline;
+    
     font-size: 15px;
     text-align: center;
+    text-decoration-color: pink;
+    
 
 }
-
+.signuplink{
+    font-size: 10px;
+    margin-top: 150px;
+}
+.forgot{
+    text-align: center;
+    text-decoration-color: pink;
+}
+.buttonLog{
+    background-color: pink;
+    font-size: 12px;
+    
+}
