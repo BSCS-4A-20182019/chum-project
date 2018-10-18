@@ -36,6 +36,27 @@
             $(".content").show();
         });
     </script>
+    <script>
+            $(document).ready(function() {
+                 
+                 $("button[name='addDom']").click(function() {
+                     var domElement = $('<div class="module_holder"></div>');
+                     
+                     domElement.appendTo('#here');
+                 });
+                 
+             });
+            </script>
+            <style>
+           
+           .module_holder {
+              background-color: white;
+              width: 55%;
+              height: 100px;
+              margin-top: 25px;
+              
+          }
+            </style>
 </head>
 <body>
   <app-root></app-root>

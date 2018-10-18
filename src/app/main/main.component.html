@@ -7,39 +7,18 @@
 
 <div class="main">
     
-    <div class="container">
-        
-        <h2>Dropdowns</h2>
-        <p>Add the .dropdown-menu-right class to .dropdown-menu to right-align the dropdown menu:</p>
-        <div class="dropdown">
-          <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
-          <span class="caret"></span></button>
-          <ul class="dropdown-menu dropdown-menu">
-            <li><a href="#">HTML</a></li>
-            <li><a href="#">CSS</a></li>
-            <li><a href="#">JavaScript</a></li>
-            <li class="divider"></li>
-            <li><a href="#">About Us</a></li>
-          </ul>
-        </div>
-      </div>
-    
-      
-  <h2>{{ getComponentName() + '.title' | translate }}</h2>
-  <p>{{ getComponentName() + '.testText' | translate }}</p>
-  <p>{{ getComponentName() + '.testTextWithVariable' | translate: {name: 'Test Name'} }}</p>
-  <p>{{ getComponentName() + '.testTextWithMultipleVariables' | translate: { variable1: 'Variable 1', variable2: 'Variable2'} }}</p>
-   <!--<form [formGroup]="formGroup">
-        <div class="col-sm-4">
-            <dynamic-form [question]="getQuestion('username')" [form]="formGroup"></dynamic-form>
-            <dynamic-form [question]="getQuestion('password')" [form]="formGroup"></dynamic-form>
-            <dynamic-form [question]="getQuestion('confirmPassword')" [form]="formGroup"></dynamic-form>
-        </div>
-        <button [disabled]="isDisabled()" class="btn btn-danger">{{ getComponentName() + '.buttonText' | translate }}</button>
-    </form>--> 
-    
-    
-        
+        <div class="div1 row">
+                <div class="col-lg-10">
+                    <textarea class="txtarea form-control"></textarea>
+                </div>
+                <div class="col-lg-2">
+                    <button type="button" name="addDom" id="addDOM" class="buttonPost btn btn-outline-danger pull-right">POST</button>
+                </div>  
+            </div>
+            <br>
+            <br>
+            <br>
+            <div id="here"></div>  
         
 
     
