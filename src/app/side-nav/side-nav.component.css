@@ -92,6 +92,14 @@
     outline: none;
     font-size: 15px;
 }
+.collapsible1 {
+    background-color: lightcoral;
+    color: white;
+    cursor: pointer;
+    border: none;
+    text-align: left;
+    outline: none;
+}
 #showHide{
     display: none;
     font-size: 12px;
