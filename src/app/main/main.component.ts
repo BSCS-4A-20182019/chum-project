@@ -5,6 +5,7 @@ import { setTheme } from 'ngx-bootstrap/utils';
 
 import { AbstractFormComponent } from '../shared/abstract-component/abstract-form.component';
 import { QuestionsService } from '../shared/services/questions.service';
+import { UserDetailsService } from '../shared/services/user-details.service';
 
 @Component({
   'selector': 'app-main',
@@ -18,7 +19,8 @@ export class MainComponent extends AbstractFormComponent {
   panleExpanded = true;
   testValue: string = '';
 
-    constructor(questionsService: QuestionsService, private router: Router) {
+    constructor(questionsService: QuestionsService, private router: Router,
+        private userDetailsService: UserDetailsService) {
         super(questionsService);
         this.fullImagePath = './CA.png';
     }

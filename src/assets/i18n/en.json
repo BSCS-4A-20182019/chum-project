@@ -14,8 +14,9 @@
     "login": {
         "username": "Username",
         "password": "Password",
-        "loginbutton": "Log-in"
-        
+        "loginbutton": "Log-in",
+        "101": "Incorrect password",
+        "102": "Username does not exist"
     },
 
     "signup": {
