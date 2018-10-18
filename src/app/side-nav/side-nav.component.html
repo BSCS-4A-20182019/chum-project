@@ -1,47 +1,44 @@
 <div class="sidebar container">
+   <a class="chumicon"><button class="collapsible1"><img src="/src/assets/images/chum2.PNG" style="height: 70px; width: 70px; padding: 20px, 10px; margin-bottom: 8px;"></button></a>
     
-    <a class="chumicon"><img src="/src/assets/images/chum2.PNG" style="height: 70px; width: 70px; padding: 20px, 10px; margin-bottom: 8px;"></a>
-
-    <button (click)="doLogOut()">LogOut</button>
-    
-  <a><img class="avat" src="/src/assets/images/prof.png" style="height: 50px; width: 50px; ">
+  <a><button class="collapsible1"><img class="avat" src="/src/assets/images/prof.png" style="height: 50px; width: 50px; "></button>
     </a>
     
     <a class="lock">
         <i class="icon-unlock">
-            <img src="/src/assets/images/home.png" style="height: 35px; width: 75px"><p>HOME</p>
+            <button class="collapsible1"><img src="/src/assets/images/home.png" style="height: 35px; width: 75px"><p>HOME</p></button>
         </i>
         <i class="icon-lock">
-            <img src="/src/assets/images/homehover.png" style="height: 40px; width: 80px"><p style="color: grey;">HOME</p>
+            <button class="collapsible1"><img src="/src/assets/images/homehover.png" style="height: 40px; width: 80px"><p style="color: grey;">HOME</p></button>
         </i>
     </a>
     
     
     <a class="lock">
         <i class="icon-unlock">
-            <img src="/src/assets/images/notif.PNG" style="height: 35px; width: 75px"><p>NOTIFICATION</p>
+            <button class="collapsible1"><img src="/src/assets/images/notif.PNG" style="height: 35px; width: 75px"><p>NOTIFICATION</p></button>
         </i>
         <i class="icon-lock">
-            <img src="/src/assets/images/notifhover.PNG" style="height: 40px; width: 90px"><p style="color: grey">NOTIFICATION</p>
+            <button class="collapsible1"><img src="/src/assets/images/notifhover.PNG" style="height: 40px; width: 90px"><p style="color: grey">NOTIFICATION</p></button>
         </i>
     </a>
     
     <a class="lock">
         <i class="icon-unlock">
-            <img src="/src/assets/images/friend.PNG" style="height: 35px; width: 75px"><p >CHUM REQUEST</p>
+            <button class="collapsible1"><img src="/src/assets/images/friend.PNG" style="height: 35px; width: 75px"><p >CHUM REQUEST</p></button>
         </i>
         <i class="icon-lock">
-            <img src="/src/assets/images/friendhover.PNG" style="height: 40px; width: 90px"><p style="color: grey">CHUM REQUEST</p>
+            <button class="collapsible1"><img src="/src/assets/images/friendhover.PNG" style="height: 40px; width: 90px"><p style="color: grey">CHUM REQUEST</p></button>
         </i>
     </a>
     
     
     <a class="lock" style="margin-bottom: 15px;">
         <i class="icon-unlock">
-            <img src="/src/assets/images/saved.png" style="height: 35px; width: 75px"><p>PINNED POST</p>
+            <button class="collapsible1"><img src="/src/assets/images/saved.png" style="height: 35px; width: 75px"><p>PINNED POST</p></button>
         </i>
         <i class="icon-lock">
-            <img src="/src/assets/images/savedhover.PNG" style="height: 40px; width: 90px"><p style="color: grey">PINNED POST</p>
+            <button class="collapsible1"><img src="/src/assets/images/savedhover.PNG" style="height: 40px; width: 90px"><p style="color: grey">PINNED POST</p></button>
         </i>
     </a>
     
@@ -56,14 +53,10 @@
             </i>
             
             <div id="showHide" >
-                    <a style="color: white;" href="#"><span class="glyphicon glyphicon-edit"></span>&nbsp;&nbsp; EDIT PROFILE</a>
-<<<<<<< HEAD
-                    <a style="color: white;" href="#"><span class="glyphicon glyphicon-wrench"></span>&nbsp;&nbsp; ACCOUNT <br>&nbsp;&nbsp;&nbsp; SETTINGS</a>
-                    <a style="color: white; " [routerLink]="" (click)="doLogOut()"><span class="glyphicon glyphicon-log-out"></span>&nbsp;&nbsp; LOGOUT</a>
-=======
-                    <a style="color: white;" href="chum/accountsettings"><span class="glyphicon glyphicon-wrench" ></span>&nbsp;&nbsp; ACCOUNT <br>&nbsp;&nbsp;&nbsp; SETTINGS</a>
-                    <a style="color: white; " href="#"><span class="glyphicon glyphicon-log-out"></span>&nbsp;&nbsp; LOGOUT</a>
->>>>>>> 1b006e1b439ab76de4e519260298fb16870a3616
+                    <button style=" border: none; width: 120px; background-color: lightcoral; color: white;" href="#"><span class="glyphicon glyphicon-edit"></span>&nbsp;&nbsp; EDIT PROFILE</button>  
+                    <button style="margin-top: 15px; border: none; width: 120px; background-color: lightcoral; color: white;" href="chum/accountsettings"><span class="glyphicon glyphicon-wrench" ></span>&nbsp;&nbsp; ACCOUNT <br>&nbsp;&nbsp;&nbsp; SETTINGS</button>
+                    <button style="margin-top: 15px; border: none; width: 120px; background-color: lightcoral; color: white; " [routerLink]="" (click)="doLogOut()"><span class="glyphicon glyphicon-log-out"></span>&nbsp;&nbsp; LOGOUT</button>
+    
                   
               </div>
         </a>
