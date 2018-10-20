@@ -5,7 +5,7 @@
     <div class="panel panel-default">
       <div class="panel-body" style="padding: 10px;">
          <div class="grid-container">
-            <div class="pic" style="padding-left: 1%"><img src="/src/assets/images/img_avatar.jpg" alt="avatar" width="230" height="230" style="border-radius: 50%"></div>
+            <div class="pic" style="padding-left: 1%"><img src="/src/assets/images/img_avatar.jpg" alt="avatar" width="200" height="200" style="border-radius: 50%"></div>
             
               <div class="name">Aldreen Gabriel Franco</div>
               <div class="colorfont">@francodreezy</div>  
@@ -16,19 +16,29 @@
     </div>
 
 
+  <form [formGroup]="formGroup">
   <div class="container">
       <div class="panel panel-default">
         <div class="panel-body" style="padding: 10px;" >
           <div class="writepost">
-           <div><textarea rows="7"cols="150"class="input" id="postarea" style="resize:none" form="usrform" placeholder="What's Up" onkeyup="success()"></textarea></div>
-           <div><button type="submit" class="buttonpic" id="pic" disabled onclick="myFunction()">UPLOAD PHOTO</button></div>
-           <div><button type="submit" class="buttonpost" id="post"  >POST</button></div>
+           <dynamic-form [question]="getQuestion('writePost')" [form]="formGroup" ></dynamic-form>
+           <div><button type="submit" class="buttonpic" name="pic" disabled onclick="myFunction()">UPLOAD PHOTO</button></div>
+           <div><button type="submit" class="buttonpost" name="post" (click)="doPost()">POST</button></div>
+           <div *ngFor="let post of posts">
+              <div class="module_holder col-sm-7">
+                <div class="row">
+                  <div class="col-sm-2"><img class="avatar" src="/src/assets/images/img_avatar.jpg"></div>
+                  <div class="username col-sm-9"><p> Aldreen Franco </p></div>
+                  {{ post.content }}
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+
+      <br>
+      <br>
+      <div id="here"> </div>
     </div>
   </div>
-
-  <br>
-  <br>
-  <div id="here"> </div>
-  </div>
+</form>

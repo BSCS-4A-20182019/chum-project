@@ -82,5 +82,13 @@
         "placeholder":"Confirm Password",
         "type": "password"
     }
+    ],
+    "timeline": [
+        {
+            "controlName": "writePost",
+            "label": "",
+            "type": "textarea",
+            "placeholder": "What's up"
+        }  
     ]
 }

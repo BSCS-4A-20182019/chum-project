@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { FormGroup } from '@angular/forms';
 
+
 import { Question } from '../shared/models/question';
 
 @Component({
@@ -13,6 +14,7 @@ export class DynamicFormComponent {
   @Input() form: FormGroup;
   @Input() questions:Array<Question>;
   formGroup: FormGroup;
+  
 
   ngOnInit() {
       this.formGroup = this.generateForm(this.questions);
@@ -21,4 +23,7 @@ export class DynamicFormComponent {
   private generateForm(questions: Array<Question>): FormGroup {
       return new FormGroup({});
   } 
+
+   
+
 }

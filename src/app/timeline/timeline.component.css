@@ -1,7 +1,7 @@
 .main {
   
     background-color: lightgray;
-    padding-left: 250px;
+    padding-left: 85px;
     padding-top: 100px;
     height: 1500px; /* Used in this example to enable scrolling */
   }
@@ -28,18 +28,19 @@
   }
 .colorfont{
 	color: lightcoral;
-	font-size: 30px;
+	font-size: 20px;
 	text-align: left;
 	padding-left: 50px;
 }
 .style2{
-	font-size: 15px;
+	font-size: 14px;
 	padding-top: 10px;
     margin-right: 10px;
     padding-left: 50px;
 }
 .panel{
-	width: 850px;
+    width: 600px;
+    height: 250px;
     padding: 20px;	
     margin-left: 70px;
 }
@@ -50,13 +51,13 @@ img{
     font-weight: bold;
     padding-left: 50px;
     padding-top: 35px;
-    font-size: 40px;
+    font-size: 25px;
 }
 
 .buttonpost{
   box-shadow: 3px 3px lightcoral;
   font-weight: bold;
-  margin-left: 440px;
+  margin-left: 350px;
   margin-top: 10px;
   width: 30%;
 }
@@ -66,7 +67,42 @@ img{
 .buttonpic{
     box-shadow: 3px 3px lightcoral;
     font-weight: bold;
-    margin-left: 440px;
+    margin-left: 350px;
     margin-top: 10px;
     width: 30%;
   }
+  .input{
+      width: 420px;
+  }
+
+  .module_holder {
+    background-color: white;
+    width: 80%;
+    height: auto;
+    margin-top: 50px;         
+}
+.avatar {
+    border-radius: 50px;
+    margin-top: 10%;
+    background-color: cadetblue;
+    height: 70px;
+    width: 70px;
+}
+.username {
+    margin-top: 2%;
+    font-size: 20px;
+}
+.post {
+    text-align: left;
+    margin-left: 120px;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.bookmark {
+    cursor: pointer;
+}
+.borders {
+    border: solid 2px;
+    cursor: pointer;
+    text-align: center;
+}
