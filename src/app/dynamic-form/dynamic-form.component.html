@@ -2,7 +2,7 @@
   <label id="fonts" [for]="question.controlName">{{ question.label }}</label>
   <div [ngSwitch]="question.type">
     <ng-container *ngSwitchCase="'text'">
-      <input class="form-control" [formControlName]="question.controlName" [id]="question.controlName" [placeholder]="question.placeholder" [type]="question.type" >
+      <input class="form-control" [formControlName]="question.controlName" [id]="question.controlName" [placeholder]="question.placeholder" [type]="question.type">
     </ng-container>
     <ng-container *ngSwitchCase="'password'">
       <input class="form-control" [formControlName]="question.controlName" [id]="question.controlName" [placeholder]="question.placeholder" [type]="question.type" >
@@ -10,10 +10,11 @@
     <ng-container *ngSwitchCase="'date'">
       <input class="form-control" [formControlName]="question.controlName" [id]="question.controlName" [placeholder]="question.placeholder" [type]="question.type" >
     </ng-container>
-    <ng-container class="radio-group"  *ngSwitchCase="'radio'">{{ question.options }}
-      <div class="radio" *ngFor="let option of question.options">
-        <input class="form-control" [formControlName]="question.controlName" [id]="question.controlName" [type]="question.type">{{ question.options }}
+    <ng-container   *ngSwitchCase="'radio'">
+      <div class="radio-group" *ngFor="let option of question.options">
+          <li ng-repeat="(key, value) in option"><input class="form-control" [formControlName]="question.controlName" [id]="question.controlName" [type]="question.type">{{ options }} 
       </div>
+    </li>
     </ng-container>
     </div>
 </form>

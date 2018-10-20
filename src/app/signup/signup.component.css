@@ -5,7 +5,8 @@
 }
 
 .signup {
-    margin-left: 770px; /* Same width as the sidebar + left position in px */
+    margin-left: 760px;
+    margin-top: 40px;
     font-size: 20px; /* Increased text to enable scrolling */
     padding: 0px 10px;
     padding-top: 100px;
@@ -23,6 +24,13 @@
 
 .signupbutton{
     text-align: center;  
+}
+.firstlast{
+    columns: 2;
+}
+.passwordConfirm{
+    columns: 2;
+    
 }
 
 @media only screen and (max-width: 600px) {

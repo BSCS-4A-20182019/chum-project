@@ -21,7 +21,8 @@
 
     "signup": {
         "email": "Email",
-        "fullname": "Full Name",
+        "lastnameSignup": "Lastname",
+        "firstnameSignup": "Firstname",
         "usernameSignup": "Username",
         "birthday": "Birthday",
         "gender": "Gender",
