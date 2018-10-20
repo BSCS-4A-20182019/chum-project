@@ -29,12 +29,16 @@ import { AccountsettingsComponent } from './accountsettings/accountsettings.comp
 import { EditProfileComponent } from './edit-profile/edit-profile.component';
 import { SignupComponent } from './signup/signup.component';
 import { TimelineComponent } from './timeline/timeline.component';
+<<<<<<< HEAD
+import { EditprofileComponent } from './editprofile/editprofile.component';
+=======
 import { LoginService } from './shared/services/login.service';
 import { LogoutService } from './shared/services/logout.service';
 import { UserDetailsService } from './shared/services/user-details.service';
 import { User } from './shared/models/user.model';
 import { ChumrequestComponent } from './chumrequest/chumrequest.component';
 import { SignupService } from './shared/services/signup.service';
+>>>>>>> 5189602b81101ec8eebcee7cecdf125cbc1c82ad
 
 export function HttpLoaderFactory(httpClient: HttpClient) {
     return new TranslateHttpLoader(httpClient, "/assets/i18n/", ".json");
@@ -54,7 +58,11 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     EditProfileComponent,
     SignupComponent,
     TimelineComponent,
+<<<<<<< HEAD
+    EditprofileComponent
+=======
     ChumrequestComponent
+>>>>>>> 5189602b81101ec8eebcee7cecdf125cbc1c82ad
 
   ],
   imports: [

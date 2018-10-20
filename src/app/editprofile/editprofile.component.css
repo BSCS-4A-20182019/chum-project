@@ -1,0 +1,43 @@
+.main {
+  
+    background-color: lightgray;
+    padding-left: 250px;
+    padding-top: 100px;
+    height: 1500px; /* Used in this example to enable scrolling */
+  }
+
+.container {
+
+  border-top: 2px solid lightcoral;
+  border-left: 2px solid lightcoral;
+  border-right: 2px solid lightcoral;
+  border-bottom: 2px solid lightcoral;
+  background-color: white;
+  margin-left: 10px;
+  height: 780px;
+  width: 600px;
+}
+
+.buttonpic{
+  box-shadow: 3px 3px lightcoral;
+  font-weight: bold;
+  font-size: 15px;
+  height: 30px;
+  width: 30%;
+}
+
+.uploadpic{
+  box-shadow: 3px 3px lightcoral;
+  font-weight: bold;
+  font-size: 15px;
+  height: 30px;
+  width: 36%;
+}
+
+.form-control{
+  font-size: 18px;
+}
+
+.form-check-label{
+  font-size: 18px;
+}
