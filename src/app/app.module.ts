@@ -29,6 +29,7 @@ import { AccountsettingsComponent } from './accountsettings/accountsettings.comp
 import { EditProfileComponent } from './edit-profile/edit-profile.component';
 import { SignupComponent } from './signup/signup.component';
 import { TimelineComponent } from './timeline/timeline.component';
+import { EditprofileComponent } from './editprofile/editprofile.component';
 
 export function HttpLoaderFactory(httpClient: HttpClient) {
     return new TranslateHttpLoader(httpClient, "/assets/i18n/", ".json");
@@ -47,7 +48,8 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     AccountsettingsComponent,
     EditProfileComponent,
     SignupComponent,
-    TimelineComponent
+    TimelineComponent,
+    EditprofileComponent
 
   ],
   imports: [

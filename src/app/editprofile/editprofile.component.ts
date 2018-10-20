@@ -4,13 +4,11 @@ import {QuestionsService} from '../shared/services/questions.service';
 import {Router} from '@angular/router';
 
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  selector: 'app-editprofile',
+  templateUrl: './editprofile.component.html',
+  styleUrls: ['./editprofile.component.css']
 })
-
-
-export class LoginComponent extends AbstractFormComponent {
+export class EditprofileComponent extends AbstractFormComponent {
 
   fullImagePath: string;
   name: any;
@@ -20,17 +18,11 @@ export class LoginComponent extends AbstractFormComponent {
     constructor(questionsService: QuestionsService, private router: Router) {
         super(questionsService);
         this.fullImagePath = './CA.png';
-    }
+    }   
 
   getComponentName(){
-    return 'editprofile';
+    return 'login';
     
   }
-  
-  isDisabled(): boolean {
-    return this.formGroup.value['username'] !== undefined &&
-    this.formGroup.value['password'] !== undefined;
-  } 
-
 
 }

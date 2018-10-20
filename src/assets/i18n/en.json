@@ -28,6 +28,19 @@
         "confirmpw": "Confirm Password",
         "signupbutton": "Sign Up"
 
+    },
+
+    "editprofile": {
+        "changeprofpic": "Change Profile Picture",
+        "emailEditprof": "Email",
+        "nameEditprof": "Full Name",
+        "gender": "Gender",
+        "birthdateEditprof": "Birthdate",
+        "usernameEditprof": "Username",
+        "passwordEditprof": "Pasword",
+        "savebutton": "Save",
+        "cancelEditprof": "Cancel" 
+
     }
 }
 

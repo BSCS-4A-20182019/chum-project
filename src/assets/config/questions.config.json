@@ -74,5 +74,47 @@
         "placeholder":"Confirm Password",
         "type": "password"
     }
-    ]
+],    "editprofile": [
+    {
+        "controlName": "emailEditprof",
+        "label": "Email",
+        "placeholder": "Enter Email",
+        "type": "email"
+    },
+    {
+        "controlName": "nameEditprof",
+        "label": "Full Name",
+        "placeholder": "Enter Full Name",
+        "type": "text"
+    },
+    {
+        "controlName": "genderEditprof",
+        "label": "Gender",
+        "type": "text"
+    },
+    {
+        "controlName": "birthdateEditprof",
+        "label": "Birthdate",
+        "type": "date"
+
+    },
+    {
+        "controlName": "usernameEditprof",
+        "label": "Username",
+        "placeholder": "Enter Username",
+        "type": "text"
+    },
+    {
+        "controlName": "passwordEditprof",
+        "label": "Password",
+        "placeholder":"Enter Password",
+        "type": "password"
+    },
+    {
+        "controlName": "bioEditprof",
+        "label": "Bio",
+        "placeholder":"Enter Bio",
+        "type": "textarea"
+    }
+]
 }
