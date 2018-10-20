@@ -12,9 +12,9 @@
     </ng-container>
     <ng-container   *ngSwitchCase="'radio'">
       <div class="radio-group" *ngFor="let option of question.options">
-          <li ng-repeat="(key, value) in option"><input class="form-control" [formControlName]="question.controlName" [id]="question.controlName" [type]="question.type">{{ options }} 
+         <input class="form-control" [formControlName]="question.controlName" [id]="question.controlName" [type]="question.type">{{ options }} 
       </div>
-    </li>
+    
     </ng-container>
     </div>
 </form>
