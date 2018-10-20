@@ -1,5 +1,20 @@
 <form [formGroup]="form">
   <label id="fonts" [for]="question.controlName">{{ question.label }}</label>
-  <input class="form-control" [formControlName]="question.controlName" [id]="question.controlName" [placeholder]="question.placeholder" [type]="question.type" >
-
+  <div [ngSwitch]="question.type">
+    <ng-container *ngSwitchCase="'text'">
+      <input class="form-control" [formControlName]="question.controlName" [id]="question.controlName" [placeholder]="question.placeholder" [type]="question.type">
+    </ng-container>
+    <ng-container *ngSwitchCase="'password'">
+      <input class="form-control" [formControlName]="question.controlName" [id]="question.controlName" [placeholder]="question.placeholder" [type]="question.type" >
+    </ng-container>
+    <ng-container *ngSwitchCase="'date'">
+      <input class="form-control" [formControlName]="question.controlName" [id]="question.controlName" [placeholder]="question.placeholder" [type]="question.type" >
+    </ng-container>
+    <ng-container   *ngSwitchCase="'radio'">
+      <div class="radio-group" *ngFor="let option of question.options">
+          <li ng-repeat="(key, value) in option"><input class="form-control" [formControlName]="question.controlName" [id]="question.controlName" [type]="question.type">{{ options }} 
+      </div>
+    </li>
+    </ng-container>
+    </div>
 </form>

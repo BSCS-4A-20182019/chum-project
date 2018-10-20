@@ -6,4 +6,5 @@ export class Question {
   value: string;
   placeholder: string;
   required: boolean;
+  options: Array<any>;
 }
