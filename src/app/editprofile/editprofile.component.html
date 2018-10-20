@@ -1,0 +1,43 @@
+<app-nav-bar></app-nav-bar>     
+
+<app-side-nav></app-side-nav>    
+
+<div class="main">
+<div class="container">
+            <form [formGroup]="formGroup">
+                <div class="editprofile">
+                <h1><b>EDIT PROFILE</b></h1>
+                <br>
+                <br>
+                <div><h2><b>Change Profile Picture</b></h2><input type="file" class="uploadpic" name="pic" accept="image/*"></div>
+                <br>
+                <dynamic-form [question]="getQuestion('emailEditprof')" [form]="formGroup" ></dynamic-form>
+                <dynamic-form [question]="getQuestion('nameEditprof')" [form]="formGroup"></dynamic-form>
+                <br>
+                <h2><b>Gender</b></h2>
+                <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input type="radio" class="form-check-input1" name="optradio">Male
+                    </label>
+                  </div>
+                  <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input type="radio" class="form-check-input2" name="optradio">Female
+                    </label>
+                  </div>
+                  <br>
+                  <br>
+                <dynamic-form [question]="getQuestion('birthdateEditprof')" [form]="formGroup"></dynamic-form>
+                <dynamic-form [question]="getQuestion('usernameEditprof')" [form]="formGroup"></dynamic-form>
+                <dynamic-form [question]="getQuestion('passwordEditprof')" [form]="formGroup"></dynamic-form>
+                <br>
+                <h2><b>Bio</b></h2>
+                <textarea class="form-control" rows="5" id="bio" style="resize: none"></textarea>
+                <br>
+                <br>
+                <div><button type="submit" class="buttonpic" id="confirm">Save</button></div>
+                </div>
+        </form>
+        </div>
+    </div>
+    

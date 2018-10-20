@@ -45,20 +45,18 @@
    
         <a class="lock" >
             <i class="icon-unlock">
-                <button id="show" class="collapsible" (click)="doLogOut()"><img src="/src/assets/images/settings.PNG" style="height: 35px; width: 75px"><p>SETTINGS</p></button>
+                <button id="show" class="collapsible" ><img src="/src/assets/images/settings.PNG" style="height: 35px; width: 75px"><p>SETTINGS</p></button>
                 
             </i>
             <i class="icon-lock">
-                <button id="hide" class="collapsible" ><img src="/src/assets/images/settingshover.PNG" style="height: 40px; width: 90px; "><p style="color: grey">SETTINGS</p></button>
+                <button id="hide" class="collapsible" > <img src="/src/assets/images/settingshover.PNG" (click)="doLogOut()" style="height: 40px; width: 90px; "><p style="color: grey">SETTINGS</p></button>
             </i>
-            
-            <div id="showHide" >
+                <div id="showHide">
                     <button style=" border: none; width: 120px; background-color: lightcoral; color: white;" href="#"><span class="glyphicon glyphicon-edit"></span>&nbsp;&nbsp; EDIT PROFILE</button>  
                     <button style="margin-top: 15px; border: none; width: 120px; background-color: lightcoral; color: white;" href="chum/accountsettings"><span class="glyphicon glyphicon-wrench" ></span>&nbsp;&nbsp; ACCOUNT <br>&nbsp;&nbsp;&nbsp; SETTINGS</button>
-                    <button style="margin-top: 15px; border: none; width: 120px; background-color: lightcoral; color: white; " [routerLink]="" (click)="doLogOut()"><span class="glyphicon glyphicon-log-out"></span>&nbsp;&nbsp; LOGOUT</button>
-    
+                    <button style="margin-top: 15px; border: none; width: 120px; background-color: lightcoral; color: white; " (click)="doLogOut()"><span class="glyphicon glyphicon-log-out"></span>&nbsp;&nbsp; LOGOUT</button>
                   
-              </div>
+                </div>
         </a>
         
  

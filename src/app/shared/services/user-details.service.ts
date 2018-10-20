@@ -23,4 +23,24 @@ export class UserDetailsService  {
     getName(): string {
         return `${this.user.firstName} ${this.user.lastName}`;
     }
+
+    getUserEmail(): string {
+        return this.user.email;
+    }
+
+    getUserLastName(): string {
+        return this.user.lastName;
+    }
+
+    getUserFirstName(): string {
+        return this.user.firstName;
+    }
+
+    getUserBirthdate(): Date {
+        return this.user.birthdate;
+    }
+
+    getUserGender(): string {
+        return this.user.gender;
+    }
 }

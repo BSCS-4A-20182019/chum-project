@@ -41,7 +41,7 @@
     {
         "controlName": "lastnameSignup",
         "label": "Lastname",
-        "placeholder": "Enter Lastname",
+        "placeholder": "Last Name",
         "type": "text"
     },
     {
@@ -57,12 +57,12 @@
         "type": "text"
     },
     {
-        "controlName": "birthday",
+        "controlName": "birthdateSignup",
         "label": "Birthdate",
         "type": "date"
     },
     {
-        "controlName": "gender",
+        "controlName": "genderSignup",
         "label": "Gender",
         "options":[{
             "1":"Male",
@@ -82,6 +82,7 @@
         "placeholder":"Confirm Password",
         "type": "password"
     }
+<<<<<<< HEAD
     ],
     "timeline": [
         {
@@ -91,4 +92,49 @@
             "placeholder": "What's up"
         }  
     ]
+=======
+],    "editprofile": [
+    {
+        "controlName": "emailEditprof",
+        "label": "Email",
+        "placeholder": "Enter Email",
+        "type": "email"
+    },
+    {
+        "controlName": "nameEditprof",
+        "label": "Full Name",
+        "placeholder": "Enter Full Name",
+        "type": "text"
+    },
+    {
+        "controlName": "genderEditprof",
+        "label": "Gender",
+        "type": "text"
+    },
+    {
+        "controlName": "birthdateEditprof",
+        "label": "Birthdate",
+        "type": "date"
+
+    },
+    {
+        "controlName": "usernameEditprof",
+        "label": "Username",
+        "placeholder": "Enter Username",
+        "type": "text"
+    },
+    {
+        "controlName": "passwordEditprof",
+        "label": "Password",
+        "placeholder":"Enter Password",
+        "type": "password"
+    },
+    {
+        "controlName": "bioEditprof",
+        "label": "Bio",
+        "placeholder":"Enter Bio",
+        "type": "textarea"
+    }
+]
+>>>>>>> 382d27f15cdd947f465f0b5add722f2fa7ed1221
 }

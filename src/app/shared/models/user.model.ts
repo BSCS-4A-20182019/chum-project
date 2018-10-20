@@ -6,7 +6,7 @@ export class User {
     email: string;
     gender: string;
     birthdate: Date;
-    profilePicture: string;
+    pic: string;
     type: string;
     bio: string;
 }
