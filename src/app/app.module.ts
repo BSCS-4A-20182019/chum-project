@@ -30,6 +30,8 @@ import { LoginComponent } from './login/login.component';
 import { AccountsettingsComponent } from './accountsettings/accountsettings.component';
 import { EditProfileComponent } from './edit-profile/edit-profile.component';
 import { NotificationComponent } from './notification/notification.component';
+import { ErrorComponent } from './error/error.component';
+import { ChumlistComponent } from './chumlist/chumlist.component';
 
 export function HttpLoaderFactory(httpClient: HttpClient) {
     return new TranslateHttpLoader(httpClient, "/assets/i18n/", ".json");
@@ -49,7 +51,9 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     LoginComponent,
     AccountsettingsComponent,
     EditProfileComponent,
-    NotificationComponent
+    NotificationComponent,
+    ErrorComponent,
+    ChumlistComponent
 
   ],
   imports: [
