@@ -41,7 +41,7 @@
     {
         "controlName": "lastnameSignup",
         "label": "Lastname",
-        "placeholder": "Enter Lastname",
+        "placeholder": "Last Name",
         "type": "text"
     },
     {

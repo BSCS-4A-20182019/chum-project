@@ -30,7 +30,7 @@ export class LoginComponent extends AbstractFormComponent {
     }
 
   getComponentName(){
-    return 'editprofile';
+    return 'login';
     
   }
   
