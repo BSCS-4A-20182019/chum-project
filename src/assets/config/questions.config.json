@@ -57,12 +57,12 @@
         "type": "text"
     },
     {
-        "controlName": "birthday",
+        "controlName": "birthdateSignup",
         "label": "Birthdate",
         "type": "date"
     },
     {
-        "controlName": "gender",
+        "controlName": "genderSignup",
         "label": "Gender",
         "options":[{
             "1":"Male",

@@ -10,15 +10,15 @@
               <dynamic-form [question]="getQuestion('firstnameSignup')" [form]="formGroup" ></dynamic-form>
             </div>
               <dynamic-form [question]="getQuestion('usernameSignup')" [form]="formGroup" ></dynamic-form>
-              <dynamic-form [question]="getQuestion('gender')" [form]="formGroup"></dynamic-form>
+              <dynamic-form [question]="getQuestion('genderSignup')" [form]="formGroup"></dynamic-form>
               <dynamic-form [question]="getQuestion('email')" [form]="formGroup"></dynamic-form> 
-              <dynamic-form [question]="getQuestion('birthday')" [form]="formGroup"></dynamic-form>
+              <dynamic-form [question]="getQuestion('birthdateSignup')" [form]="formGroup"></dynamic-form>
             <div class="passwordConfirm">
               <dynamic-form [question]="getQuestion('passwordSignup')" [form]="formGroup"></dynamic-form>
               <dynamic-form [question]="getQuestion('confirmpw')" [form]="formGroup" ></dynamic-form>
             </div>
               <br>
-              <button class="btn btn-success btn-block" [disabled]="formGroup.valid">{{ getComponentName() + '.signupbutton' | translate }}</button>
+              <button class="btn btn-success btn-block"  (click)="doSignup()">{{ getComponentName() + '.signupbutton' | translate }}</button>
               </div>
             </div>
           </form>

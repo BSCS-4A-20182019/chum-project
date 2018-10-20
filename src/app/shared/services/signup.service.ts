@@ -11,7 +11,7 @@ export class SignupService {
         private route: Router) {  }
 
     signUp(user: User) {
-        return this.http.post('/api/signup', {
+        return this.http.post('/api/createuser', {
             email: user.email,
             username: user.username,
             password: user.password,
