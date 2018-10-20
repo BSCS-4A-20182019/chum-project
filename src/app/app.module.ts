@@ -34,6 +34,7 @@ import { LogoutService } from './shared/services/logout.service';
 import { UserDetailsService } from './shared/services/user-details.service';
 import { User } from './shared/models/user.model';
 import { ChumrequestComponent } from './chumrequest/chumrequest.component';
+import { SignupService } from './shared/services/signup.service';
 
 export function HttpLoaderFactory(httpClient: HttpClient) {
     return new TranslateHttpLoader(httpClient, "/assets/i18n/", ".json");
@@ -78,7 +79,8 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     LoginService,
     UserDetailsService,
     User,
-    LogoutService
+    LogoutService,
+    SignupService
   ],
   exports: [
     TranslateModule
