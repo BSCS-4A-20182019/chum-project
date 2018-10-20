@@ -1,61 +1,59 @@
 <div class="sidebar container">
+   <a class="chumicon"><button class="collapsible1"><img src="/src/assets/images/chum2.PNG" style="height: 70px; width: 70px; padding: 20px, 10px; margin-bottom: 8px;"></button></a>
     
-    <a class="chumicon"><img src="/src/assets/images/chum2.PNG" style="height: 70px; width: 70px; padding: 20px, 10px; margin-bottom: 8px; "></a>
-
-    
-    
-  <a><img class="avat" src="/src/assets/images/prof.png" style="height: 50px; width: 50px;" [routerLink]="['../timeline']">
+  <a><button class="collapsible1"><img class="avat" src="/src/assets/images/prof.png" style="height: 50px; width: 50px; "></button>
     </a>
     
     <a class="lock">
         <i class="icon-unlock">
-            <img src="/src/assets/images/home.png" style="height: 35px; width: 75px"><p>HOME</p>
+            <button class="collapsible1"><img src="/src/assets/images/home.png" style="height: 35px; width: 75px"><p>HOME</p></button>
         </i>
         <i class="icon-lock">
-            <img src="/src/assets/images/homehover.png" style="height: 40px; width: 80px"><p style="color: grey;">HOME</p>
+            <button class="collapsible1"><img src="/src/assets/images/homehover.png" style="height: 40px; width: 80px"><p style="color: grey;">HOME</p></button>
         </i>
     </a>
     
     
     <a class="lock">
         <i class="icon-unlock">
-            <img src="/src/assets/images/notif.PNG" style="height: 35px; width: 75px"><p>NOTIFICATION</p>
+            <button class="collapsible1"><img src="/src/assets/images/notif.PNG" style="height: 35px; width: 75px"><p>NOTIFICATION</p></button>
         </i>
         <i class="icon-lock">
-            <img src="/src/assets/images/notifhover.PNG" style="height: 40px; width: 90px"><p style="color: grey">NOTIFICATION</p>
+            <button class="collapsible1"><img src="/src/assets/images/notifhover.PNG" style="height: 40px; width: 90px"><p style="color: grey">NOTIFICATION</p></button>
         </i>
     </a>
     
     <a class="lock">
         <i class="icon-unlock">
-            <img src="/src/assets/images/friend.PNG" style="height: 35px; width: 75px"><p >CHUM REQUEST</p>
+            <button class="collapsible1"><img src="/src/assets/images/friend.PNG" style="height: 35px; width: 75px"><p >CHUM REQUEST</p></button>
         </i>
         <i class="icon-lock">
-            <img src="/src/assets/images/friendhover.PNG" style="height: 40px; width: 90px"><p style="color: grey">CHUM REQUEST</p>
+            <button class="collapsible1"><img src="/src/assets/images/friendhover.PNG" style="height: 40px; width: 90px"><p style="color: grey">CHUM REQUEST</p></button>
         </i>
     </a>
     
     
-    <a class="lock">
+    <a class="lock" style="margin-bottom: 15px;">
         <i class="icon-unlock">
-            <img src="/src/assets/images/saved.png" style="height: 35px; width: 75px"><p>PINNED POST</p>
+            <button class="collapsible1"><img src="/src/assets/images/saved.png" style="height: 35px; width: 75px"><p>PINNED POST</p></button>
         </i>
         <i class="icon-lock">
-            <img src="/src/assets/images/savedhover.PNG" style="height: 40px; width: 90px"><p style="color: grey">PINNED POST</p>
+            <button class="collapsible1"><img src="/src/assets/images/savedhover.PNG" style="height: 40px; width: 90px"><p style="color: grey">PINNED POST</p></button>
         </i>
     </a>
     
    
         <a class="lock" >
             <i class="icon-unlock">
-                <button id="show" class="collapsible" ><img src="/src/assets/images/settings.PNG" style="height: 35px; width: 75px"><p>SETTINGS</p></button>
+                <button id="show" class="collapsible" (click)="doLogOut()"><img src="/src/assets/images/settings.PNG" style="height: 35px; width: 75px"><p>SETTINGS</p></button>
                 
             </i>
             <i class="icon-lock">
-                <button id="hide" class="collapsible" ><img src="/src/assets/images/settingshover.PNG" style="height: 40px; width: 90px; "><p style="color: grey">SETTINGS</p></button>
+                <button id="hide" class="collapsible" (click)="doLogOut()" ><img src="/src/assets/images/settingshover.PNG" style="height: 40px; width: 90px; "><p style="color: grey">SETTINGS</p></button>
             </i>
             
             <div id="showHide" >
+<<<<<<< HEAD
                     <a style="color: white;" href="chum/editprofile">EDIT PROFILE</a>
                     <a style="color: white;" href="#">ACCOUNT SETTINGS</a>
                     <a style="color: white; " href="#">LOGOUT</a>
@@ -63,57 +61,15 @@
               </div>
         </a>
         
+=======
+                    <button style=" border: none; width: 120px; background-color: lightcoral; color: white;" href="#"><span class="glyphicon glyphicon-edit"></span>&nbsp;&nbsp; EDIT PROFILE</button>  
+                    <button style="margin-top: 15px; border: none; width: 120px; background-color: lightcoral; color: white;" href="chum/accountsettings"><span class="glyphicon glyphicon-wrench" ></span>&nbsp;&nbsp; ACCOUNT <br>&nbsp;&nbsp;&nbsp; SETTINGS</button>
+                    <button style="margin-top: 15px; border: none; width: 120px; background-color: lightcoral; color: white; " [routerLink]="" (click)="doLogOut()"><span class="glyphicon glyphicon-log-out"></span>&nbsp;&nbsp; LOGOUT</button>
+>>>>>>> 5189602b81101ec8eebcee7cecdf125cbc1c82ad
     
-    <!--
-        <div class="panel-group">
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                  <img src="/src/assets/images/settingshover.PNG" style="height: 35px; width: 75px; ">
-                <h4 class="panel-title">
-                  <a data-toggle="collapse" href="#collapse1">
-                      <p>SETTINGS</p></a>
-                </h4>
+                  
               </div>
-              <div id="collapse1" class="panel-collapse collapse">
-                <div class="panel-body">
-                 
-                </div>
-              </div>
-            </div>
-        </div>
--->
-    <!--
-        <a class="lock" data-toggle="collapse"  >
-            <i class="icon-unlock">
-                <button class="collapsible"  ><img src="/src/assets/images/settings.PNG" style="height: 35px; width: 75px"><p>SETTINGS</p></button>
-                
-            </i>
-            <i class="icon-lock">
-                <button class="collapsible" id="show"><img src="/src/assets/images/settingshover.PNG" style="height: 40px; width: 90px; "><p style="color: grey">SETTINGS</p></button>
-            </i>
-            
         </a>
--->
-    <!--
-        <div class="tab pink">
-              <input id="tab-four" type="checkbox" name="tabs2">
-                <div class="lock">
-                    <a class="icon-unlock"><img src="/src/assets/images/settings.PNG" style="height: 35px; width: 75px; "><label for="tab-four"  style="font-size: 12px; color: white">SETTINGS</label></a>
-
-                    <a class="icon-lock"><img src="/src/assets/images/settingshover.PNG" style="height: 40px; width: 90px; margin-left: 20px; margin-right: 20px; "><label for="tab-four"  style="font-size: 12px; color: grey">SETTINGS</label></a>
-                </div>
-              
-        </div>
-        -->
-        <!--
-        <li><a href="#show"><img src="/src/assets/images/settings.PNG" style="height: 35px; width: 75px"><p>SETTINGS</p></a></li>
-        <ul class="collapse list-unstyled" id="forms">
-            
-            <li><a ref="#">EDIT PROFILE</a></li>
-            <li><a href="#">ACCOUNT SETTINGS</a></li>
-            <li class="divider"></li>
-            <li><a href="#">LOGOUT</a></li>
-        </ul>
-        -->
         
+ 
 </div>

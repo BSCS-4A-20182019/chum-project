@@ -5,15 +5,20 @@
       <form [formGroup]="formGroup">
           <div class="col-sm-3" >
             <div class = "signupsubmit">
-              <dynamic-form [question]="getQuestion('email')" [form]="formGroup" ></dynamic-form>
-              <dynamic-form [question]="getQuestion('fullname')" [form]="formGroup"></dynamic-form>
+            <div class="firstlast">
+              <dynamic-form [question]="getQuestion('lastnameSignup')" [form]="formGroup" ></dynamic-form>
+              <dynamic-form [question]="getQuestion('firstnameSignup')" [form]="formGroup" ></dynamic-form>
+            </div>
               <dynamic-form [question]="getQuestion('usernameSignup')" [form]="formGroup" ></dynamic-form>
-              <dynamic-form [question]="getQuestion('birthday')" [form]="formGroup"></dynamic-form>
               <dynamic-form [question]="getQuestion('gender')" [form]="formGroup"></dynamic-form>
+              <dynamic-form [question]="getQuestion('email')" [form]="formGroup"></dynamic-form> 
+              <dynamic-form [question]="getQuestion('birthday')" [form]="formGroup"></dynamic-form>
+            <div class="passwordConfirm">
               <dynamic-form [question]="getQuestion('passwordSignup')" [form]="formGroup"></dynamic-form>
               <dynamic-form [question]="getQuestion('confirmpw')" [form]="formGroup" ></dynamic-form>
+            </div>
               <br>
-              <button class="btn btn-success btn-block"  [routerLink]="['../login']" >{{ getComponentName() + '.signupbutton' | translate }}</button>
+              <button class="btn btn-success btn-block" [disabled]="formGroup.valid">{{ getComponentName() + '.signupbutton' | translate }}</button>
               </div>
             </div>
           </form>

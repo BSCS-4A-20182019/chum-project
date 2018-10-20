@@ -7,8 +7,43 @@
   border-style: solid;
   border-left: 6px;
     border-right: 6px;
+    z-index: 1;
+    
+}
+
+.logo{
+   text-align: center;
+    display: block; 
 }
 
 .container{
   width: 100%;
+    margin: 0 auto;
 }
+
+@media (max-width: 900px) {
+    .nokwan{
+        display: none;
+    }
+}
+
+@media (max-width: 575px) {
+   .logo {
+    display: none;
+    }
+}
+/*
+@media only screen and (min-width: 800px)
+{
+  .fixed-width
+  {
+    position: fixed;
+    width: 800px;
+  }
+    .container
+  {
+    position: fixed;
+    width: 800px;
+  }
+}
+*/

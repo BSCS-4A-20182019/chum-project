@@ -39,9 +39,15 @@
             "type": "text"
     },
     {
-        "controlName": "fullname",
-        "label": "Full Name",
-        "placeholder": "Enter Full Name",
+        "controlName": "lastnameSignup",
+        "label": "Lastname",
+        "placeholder": "Enter Lastname",
+        "type": "text"
+    },
+    {
+        "controlName": "firstnameSignup",
+        "label": "Firstname",
+        "placeholder": "Enter Firstname",
         "type": "text"
     },
     {
@@ -58,9 +64,11 @@
     {
         "controlName": "gender",
         "label": "Gender",
-        "placeholder": "Male/Female",
-        "type": "text"
-
+        "options":[{
+            "1":"Male",
+            "2":"Female"
+       }],
+        "type": "radio"
     },
     {
         "controlName": "passwordSignup",
