@@ -2,23 +2,54 @@
 <app-nav-bar></app-nav-bar>  
 
 <app-side-nav></app-side-nav>    
-<!DOCTYPE html>
+
 
 
 <div class="main">
     
         <div class="div1 row">
-                <div class="col-lg-10">
-                    <textarea class="txtarea form-control"></textarea>
+                <div class="mainpost">
+                    <dynamic-form [question]="getQuestion('mainPost')" [form]="formGroup"></dynamic-form>
                 </div>
                 <div class="col-lg-2">
-                    <button type="button" name="addDom" id="addDOM" class="buttonPost btn btn-outline-danger pull-right">POST</button>
+                    <div><button type="submit" id="mainpost" class="btn btn-outline-danger" name="post" (click)="doPost()">POST</button></div>
                 </div>  
             </div>
             <br>
             <br>
             <br>
-            <div id="here"></div>  
+            <div *ngFor="let post of posts">
+                <div class="print col-sm-12"><div class="row">
+                    <div class="col-sm-2">
+                        <img src="/src/assets/images/prof.png" style="width: 70px; height: 70px">
+                    </div>
+                    <div class="uname col-sm-9">
+                        <p>Aldreen Franco</p>
+                    </div>
+                    <div class="bookmark col-sm-1">
+                        <a><img src="/src/assets/images/savedhover.PNG" style="width: 40px; height: 25px"></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 textpost">
+                        <p><b>{{ post.content }}</b></p>
+                    </div>
+                </div>
+                <div class="row" style="margin-bottom: 10px;">
+                    <div class="col-sm-3 borderss" style="background-color:lavender;cursor: pointer;text-align: center">
+                        <p><b>LIKE</b></p>
+                    </div>
+                    <div class="col-sm-6 borderss" style="background-color:lavenderblush;text-align: center;cursor: pointer">
+                        <p><b>COMMENT</b></p>
+                    
+                    </div>
+                    <div class="col-sm-3 borderss" style="background-color:lavender;text-align: center;cursor: pointer">
+                        <p><b>SHARE</b></p>
+                    </div>
+                </div>
+            
+            </div>
+            </div>  
         
 
     

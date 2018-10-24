@@ -8,7 +8,7 @@
       <input class="form-control" [formControlName]="question.controlName" [id]="question.controlName" [placeholder]="question.placeholder" [type]="question.type" >
     </ng-container>
     <ng-container *ngSwitchCase="'textarea'">
-        <textarea rows="7"cols="150"class="input" [id]="questions.controlName" style="resize:none" [formControlName]="question.controlName" [placeholder]="question.placeholder"></textarea>
+        <textarea class="input" [id]="questions.controlName" [formControlName]="question.controlName" [placeholder]="question.placeholder"></textarea>
     </ng-container>
     <ng-container *ngSwitchCase="'date'">
       <input class="form-control" [formControlName]="question.controlName" [id]="question.controlName" [placeholder]="question.placeholder" [type]="question.type" >

@@ -39,4 +39,14 @@ export class SideNavComponent implements OnInit {
       }
     );
   }
+
+  toAccountSettings() {
+    this.router.navigateByUrl('/chum/accountsettings');
+  }
+  toEditProfile(){
+    this.router.navigateByUrl('/chum/editprofile');
+  }
+  toMain(){
+    this.router.navigateByUrl('/chum/main');
+  }
 }

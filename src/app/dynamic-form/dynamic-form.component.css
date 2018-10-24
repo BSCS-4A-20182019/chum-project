@@ -2,6 +2,11 @@ label{
     font-size: 15px;
 }
 
-input{
-    font-size: 15px
+.input{
+    font-size: 15px;
+    resize: none;
+    width: 500px;
+    height: 100px;
+    margin-left: 20px;
 }
+
