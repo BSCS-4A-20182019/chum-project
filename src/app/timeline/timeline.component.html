@@ -1,12 +1,12 @@
 <app-nav-bar></app-nav-bar>  
-<app-side-nav></app-side-nav>    
+<app-side-nav></app-side-nav>
+<app-rightbar></app-rightbar>    
 <div class="main">
-<div class="container">
+<div>
     <div class="panel panel-default">
       <div class="panel-body" style="padding: 10px;">
          <div class="grid-container">
             <div class="pic" style="padding-left: 1%"><img src="/src/assets/images/img_avatar.jpg" alt="avatar" width="200" height="200" style="border-radius: 50%"></div>
-            
               <div class="name">Aldreen Gabriel Franco</div>
               <div class="colorfont">@francodreezy</div>  
               <div class="style2">CEU MAKATI | COMSCI STUDENT | GOD'S PRINCE </div>        
@@ -17,28 +17,48 @@
 
 
   <form [formGroup]="formGroup">
-  <div class="container">
+  <div>
       <div class="panel panel-default">
         <div class="panel-body" style="padding: 10px;" >
           <div class="writepost">
-           <dynamic-form [question]="getQuestion('writePost')" [form]="formGroup" ></dynamic-form>
+            <dynamic-form [question]="getQuestion('writePost')" [form]="formGroup" ></dynamic-form>
+          </div>
            <div><button type="submit" class="buttonpic" name="pic" disabled onclick="myFunction()">UPLOAD PHOTO</button></div>
            <div><button type="submit" class="buttonpost" name="post" (click)="doPost()">POST</button></div>
+           <br><br><br><br><br><br><br>
            <div *ngFor="let post of posts">
-              <div class="module_holder col-sm-7">
+            <div class="print col-sm-12"><div class="row">
+              <div class="col-sm-2">
+                  <img class="logo" src="/src/assets/images/prof.png" style="width: 70px; height: 70px">
+              </div>
+              <div class="uname col-sm-9">
+                  <p><b>{{ getComponentName() + '.uname' | translate }}</b></p>
+              </div>
+              <div class="bookmark col-sm-1">
+                  <a><img src="/src/assets/images/savedhover.PNG" style="width: 40px; height: 25px"></a>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-sm-6 textpost">
+                  <p><b>{{ post.content }}</b></p>
+              </div>
+          </div>
+          </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</form>
+
+
+
+<!---
+<div class="module_holder col-sm-7">
                 <div class="row">
                   <div class="col-sm-2"><img class="avatar" src="/src/assets/images/img_avatar.jpg"></div>
                   <div class="username col-sm-9"><p> Aldreen Franco ttt </p></div>
                   {{ post.content }}
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
 
-      <br>
-      <br>
-      <div id="here"> </div>
-    </div>
-  </div>
-</form>
+-->

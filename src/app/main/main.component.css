@@ -11,7 +11,9 @@
     width:53%;
     height: 140px;
     margin-left: 1px;
+    margin-top: 5px;
     background-color: white;
+    border: solid 2px lightcoral;
     
     }
 
@@ -28,6 +30,7 @@
         width: 53%;
         height: auto;
         margin-bottom: 20px;
+        border: solid 2px lightcoral;
     }
     img{
         border-radius: 50px;

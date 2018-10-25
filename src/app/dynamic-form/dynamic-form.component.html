@@ -13,6 +13,9 @@
     <ng-container *ngSwitchCase="'date'">
       <input class="form-control" [formControlName]="question.controlName" [id]="question.controlName" [placeholder]="question.placeholder" [type]="question.type" >
     </ng-container>
+    <ng-container *ngSwitchCase="'email'">
+      <input class="form-control" [formControlName]="question.controlName" [id]="question.controlName" [placeholder]="question.placeholder" [type]="question.type" >
+    </ng-container>
     <ng-container   *ngSwitchCase="'radio'">
       <div class="radio-group" *ngFor="let option of question.options">
          <input class="form-control" [formControlName]="question.controlName" [id]="question.controlName" [type]="question.type">{{ options }} 

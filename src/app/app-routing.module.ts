@@ -7,6 +7,7 @@ import { CoreResolver } from './shared/services/core.resolver';
 import { SignupComponent } from './signup/signup.component';
 import {TimelineComponent} from './timeline/timeline.component';
 import { EditprofileComponent } from './editprofile/editprofile.component';	
+import { RightbarComponent } from './rightbar/rightbar.component';
 
 const appRoutes: Routes = [
   {
@@ -19,8 +20,9 @@ const appRoutes: Routes = [
 		{ path: 'signup', component: SignupComponent },
 		{ path: 'timeline', component: TimelineComponent },
 		{ path: 'editprofile', component: EditprofileComponent },
-		
-		{ path: 'accountsettings', component: AccountsettingsComponent }
+		{ path: 'accountsettings', component: AccountsettingsComponent },
+		{ path: 'rightbar', component: RightbarComponent },
+
 	  
   ]
   }

@@ -5,6 +5,11 @@
         "testTextWithVariable": "Another text added with {{name}} provided",
         "testTextWithMultipleVariables": "This has multiple variables like {{ variable1 }} and {{ variable2 }}",
         "buttonText": "Submit",
+        "post": "POST",
+        "uname": "Aldreen Franco",
+        "like": "LIKE",
+        "comment": "COMMENT",
+        "share": "SHARE",
         
         "modal": {
             "changeProfilePicture": "Change profile picture"
@@ -16,7 +21,9 @@
         "password": "Password",
         "loginbutton": "Log-in",
         "101": "Incorrect password",
-        "102": "Username does not exist"
+        "102": "Username does not exist",
+        "sign": "Sign-Up",
+        "forgot": "Forgot Password"
     },
 
     "signup": {
@@ -33,16 +40,36 @@
     },
 
     "editprofile": {
+        "editpro": "EDIT PROFILE",
         "changeprofpic": "Change Profile Picture",
         "emailEditprof": "Email",
-        "nameEditprof": "Full Name",
+        "firstname": "First Name",
+        "lastname" : "Last Name",
         "gender": "Gender",
-        "birthdateEditprof": "Birthdate",
-        "usernameEditprof": "Username",
-        "passwordEditprof": "Pasword",
+        "birthdate": "Birthdate",
+        "username": "Username",
+        "password": "Pasword",
+        "bio": "Bio",
         "savebutton": "Save",
-        "cancelEditprof": "Cancel" 
+        "cancelEditprof": "Cancel",
+        "male": "Male",
+        "female": "Female" 
 
+    },
+    "accountsettings":{
+        "private": "Private Account",
+        "settings": "Account Settings",
+        "deactivate": "Deactivate Account",
+        "save": "Save",
+        "cancel": "Cancel"
+
+    },
+    "timeline":{
+        "uname": "Aldreen Franco"
+    },
+    "rightbar":{
+        "global": "GLOBAL RANK",
+        "chum": "CHUM RANK"
     }
 }
 

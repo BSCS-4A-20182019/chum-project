@@ -1,43 +1,100 @@
 <app-nav-bar></app-nav-bar>     
 
-<app-side-nav></app-side-nav>    
+<app-side-nav></app-side-nav>  
+
+<app-rightbar></app-rightbar>
 
 <div class="main">
-<div class="container">
-            <form [formGroup]="formGroup">
-                <div class="editprofile">
-                <h1><b>EDIT PROFILE</b></h1>
-                <br>
-                <br>
-                <div><h2><b>Change Profile Picture</b></h2><input type="file" class="uploadpic" name="pic" accept="image/*"></div>
-                <br>
-                <dynamic-form [question]="getQuestion('emailEditprof')" [form]="formGroup" ></dynamic-form>
-                <dynamic-form [question]="getQuestion('nameEditprof')" [form]="formGroup"></dynamic-form>
-                <br>
-                <h2><b>Gender</b></h2>
-                <div class="form-check-inline">
-                    <label class="form-check-label">
-                      <input type="radio" class="form-check-input1" name="optradio">Male
-                    </label>
-                  </div>
-                  <div class="form-check-inline">
-                    <label class="form-check-label">
-                      <input type="radio" class="form-check-input2" name="optradio">Female
-                    </label>
-                  </div>
-                  <br>
-                  <br>
-                <dynamic-form [question]="getQuestion('birthdateEditprof')" [form]="formGroup"></dynamic-form>
-                <dynamic-form [question]="getQuestion('usernameEditprof')" [form]="formGroup"></dynamic-form>
-                <dynamic-form [question]="getQuestion('passwordEditprof')" [form]="formGroup"></dynamic-form>
-                <br>
-                <h2><b>Bio</b></h2>
-                <textarea class="form-control" rows="5" id="bio" style="resize: none"></textarea>
-                <br>
-                <br>
-                <div><button type="submit" class="buttonpic" id="confirm">Save</button></div>
-                </div>
-        </form>
-        </div>
-    </div>
+  <div class="container">
+      <form [formGroup]="formGroup">
+         <div>
+            <h1><b>{{ getComponentName() + '.editpro' | translate }}</b></h1>
+         </div>
+         <br><br>
+        <table class="tab1">
+          <tr>
+            <td><h2><b>{{ getComponentName() + '.changeprofpic' | translate }}</b></h2></td>
+            <td><input type="file" class="uploadpic" name="pic" accept="image/*"></td>
+          </tr>
+          <tr>
+            <td><h3><b>{{ getComponentName() + '.emailEditprof' | translate }}</b></h3></td>
+            <td><dynamic-form [question]="getQuestion('emailEditprof')" [form]="formGroup" ></dynamic-form></td>
+          </tr>
+          <tr>
+            <td><h3><b>{{ getComponentName() + '.firstname' | translate }}</b></h3></td>
+            <td><dynamic-form [question]="getQuestion('editfirstname')" [form]="formGroup"></dynamic-form></td>
+          </tr>
+          <tr>
+            <td><h3><b>{{ getComponentName() + '.lastname' | translate }}</b></h3></td>
+            <td><dynamic-form [question]="getQuestion('editlastname')" [form]="formGroup"></dynamic-form></td>
+          </tr>
+          <tr>
+            <td><h3><b>{{ getComponentName() + '.gender' | translate }}</b></h3></td>
+            <td><div class="form-check-inline">
+              <label class="form-check-label" style="margin-right:20px">
+                <input type="radio" class="form-check-input1" name="optradio">{{ getComponentName() + '.male' | translate }}
+              </label>
+            </div>
+            <div class="form-check-inline">
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input2" name="optradio">{{ getComponentName() + '.female' | translate }}
+              </label>
+            </div></td>
+          </tr>
+          <tr>
+            <td><h3><b>{{ getComponentName() + '.birthdate' | translate }}</b></h3></td>
+            <td><dynamic-form [question]="getQuestion('birthdateEditprof')" [form]="formGroup"></dynamic-form></td>
+          </tr>
+          <tr>
+            <td><h3><b>{{ getComponentName() + '.username' | translate }}</b></h3></td>
+            <td><dynamic-form [question]="getQuestion('usernameEditprof')" [form]="formGroup"></dynamic-form></td>
+          </tr>
+          <tr>
+            <td><h3><b>{{ getComponentName() + '.password' | translate }}</b></h3></td>
+            <td><dynamic-form [question]="getQuestion('passwordEditprof')" [form]="formGroup"></dynamic-form></td>
+          </tr>
+          <tr>
+            <td><h3><b>{{ getComponentName() + '.bio' | translate }}</b></h3></td>
+          </tr>
+        </table>
+        <dynamic-form [question]="getQuestion('bioEditprof')" [form]="formGroup"></dynamic-form>
+        <br><br>
+        <div><button type="submit" class="buttonpic" id="confirm">{{ getComponentName() + '.savebutton' | translate }}</button></div>     
+      </form>
+  </div>
+</div>
     
+
+
+    <!--<div class="editprofile">
+          <h1><b>EDIT PROFILE</b></h1>
+          <br>
+          <br>
+          <div><h2><b>Change Profile Picture</b></h2><input type="file" class="uploadpic" name="pic" accept="image/*"></div>
+          <br>
+          <dynamic-form [question]="getQuestion('emailEditprof')" [form]="formGroup" ></dynamic-form>
+          <dynamic-form [question]="getQuestion('nameEditprof')" [form]="formGroup"></dynamic-form>
+          <br>
+          <h2><b>Gender</b></h2>
+          <div class="form-check-inline">
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input1" name="optradio">Male
+              </label>
+            </div>
+            <div class="form-check-inline">
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input2" name="optradio">Female
+              </label>
+            </div>
+            <br>
+            <br>
+          <dynamic-form [question]="getQuestion('birthdateEditprof')" [form]="formGroup"></dynamic-form>
+          <dynamic-form [question]="getQuestion('usernameEditprof')" [form]="formGroup"></dynamic-form>
+          <dynamic-form [question]="getQuestion('passwordEditprof')" [form]="formGroup"></dynamic-form>
+          <br>
+          <h2><b>Bio</b></h2>
+          <textarea class="form-control" rows="5" id="bio" style="resize: none"></textarea>
+          <br>
+          <br>
+          <div><button type="submit" class="buttonpic" id="confirm">Save</button></div>
+          </div>-->

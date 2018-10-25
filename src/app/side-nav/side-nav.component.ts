@@ -49,4 +49,7 @@ export class SideNavComponent implements OnInit {
   toMain(){
     this.router.navigateByUrl('/chum/main');
   }
+  doTimeline(){
+    this.router.navigateByUrl('/chum/timeline');
+  }
 }

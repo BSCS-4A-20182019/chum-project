@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+    padding: 0;
+    
+    background: #232323;
+    color: #cdcdcd;
+    font-family: "Avenir Next", "Avenir", sans-serif;
+  
+  }
+  
+  
+  #menu{
+    width: 600px;
+    height: 100%;
+    padding: 25px;
+    right: -100px;
+    background-color: lightgray;
+    margin-top: 80px;
+    position: fixed;
+    z-index: 3;
+  
+  }
+  .global{
+      width: 450px;
+      height: 250px;
+      background-color:white;
+      border: solid 3px lightcoral;
+  }

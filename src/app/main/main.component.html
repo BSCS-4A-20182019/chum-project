@@ -1,7 +1,9 @@
 
 <app-nav-bar></app-nav-bar>  
 
-<app-side-nav></app-side-nav>    
+<app-side-nav></app-side-nav>
+
+<app-rightbar></app-rightbar>
 
 
 
@@ -12,7 +14,7 @@
                     <dynamic-form [question]="getQuestion('mainPost')" [form]="formGroup"></dynamic-form>
                 </div>
                 <div class="col-lg-2">
-                    <div><button type="submit" id="mainpost" class="btn btn-outline-danger" name="post" (click)="doPost()">POST</button></div>
+                    <div><button type="submit" id="mainpost" class="btn btn-outline-danger" name="post" (click)="doPost()">{{ getComponentName() + '.post' | translate }}</button></div>
                 </div>  
             </div>
             <br>
@@ -24,7 +26,7 @@
                         <img src="/src/assets/images/prof.png" style="width: 70px; height: 70px">
                     </div>
                     <div class="uname col-sm-9">
-                        <p>Aldreen Franco</p>
+                        <p>{{ getComponentName() + '.uname' | translate }}</p>
                     </div>
                     <div class="bookmark col-sm-1">
                         <a><img src="/src/assets/images/savedhover.PNG" style="width: 40px; height: 25px"></a>
@@ -37,14 +39,14 @@
                 </div>
                 <div class="row" style="margin-bottom: 10px;">
                     <div class="col-sm-3 borderss" style="background-color:lavender;cursor: pointer;text-align: center">
-                        <p><b>LIKE</b></p>
+                        <p><b>{{ getComponentName() + '.like' | translate }}</b></p>
                     </div>
                     <div class="col-sm-6 borderss" style="background-color:lavenderblush;text-align: center;cursor: pointer">
-                        <p><b>COMMENT</b></p>
+                        <p><b>{{ getComponentName() + '.comment' | translate }}</b></p>
                     
                     </div>
                     <div class="col-sm-3 borderss" style="background-color:lavender;text-align: center;cursor: pointer">
-                        <p><b>SHARE</b></p>
+                        <p><b>{{ getComponentName() + '.share' | translate }}</b></p>
                     </div>
                 </div>
             
