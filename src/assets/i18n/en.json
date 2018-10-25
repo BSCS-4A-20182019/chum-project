@@ -65,7 +65,9 @@
 
     },
     "timeline":{
-        "uname": "Aldreen Franco"
+        "uname": "Aldreen Franco",
+        "upload": "UPLOAD PHOTO",
+        "timepost": "POST"
     },
     "rightbar":{
         "global": "GLOBAL RANK",

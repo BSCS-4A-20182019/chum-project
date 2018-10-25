@@ -8,11 +8,13 @@
 
 .container {
 
-  border: 2px solid lightcoral;
+  border: 3px solid lightcoral;
   background-color: white;
+  margin-top: 5px;
   margin-left: 10px;
   height: auto;
   width: 53%;
+
 }
 
 .buttonpic{
