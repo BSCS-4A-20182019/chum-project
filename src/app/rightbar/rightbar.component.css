@@ -25,4 +25,5 @@ body{
       height: 250px;
       background-color:white;
       border: solid 3px lightcoral;
+      border-radius: 5px;
   }

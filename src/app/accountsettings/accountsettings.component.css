@@ -89,3 +89,13 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+.save{
+  box-shadow: 3px 3px lightcoral;
+  font-weight: bold;
+  width: 30%;
+}
+.cancel{
+  box-shadow: 3px 3px lightcoral;
+  font-weight: bold;
+  width: 30%;
+}

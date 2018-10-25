@@ -23,13 +23,13 @@
           <div class="writepost">
             <dynamic-form [question]="getQuestion('writePost')" [form]="formGroup" ></dynamic-form>
           </div>
-           <div><button type="submit" class="buttonpic" name="pic" disabled onclick="myFunction()">UPLOAD PHOTO</button></div>
-           <div><button type="submit" class="buttonpost" name="post" (click)="doPost()">POST</button></div>
+           <div><button type="submit" class="buttonpic" name="pic" disabled onclick="myFunction()">{{ getComponentName() + '.upload' | translate }}</button></div>
+           <div><button type="submit" class="buttonpost" name="post" (click)="doPost()">{{ getComponentName() + '.timepost' | translate }}</button></div>
            <br><br><br><br><br><br><br>
            <div *ngFor="let post of posts">
             <div class="print col-sm-12"><div class="row">
               <div class="col-sm-2">
-                  <img class="logo" src="/src/assets/images/prof.png" style="width: 70px; height: 70px">
+                  <img class="logo" src="/src/assets/images/img_avatar.jpg" style="width: 70px; height: 70px">
               </div>
               <div class="uname col-sm-9">
                   <p><b>{{ getComponentName() + '.uname' | translate }}</b></p>

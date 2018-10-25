@@ -15,6 +15,7 @@ import { UserDetailsService } from '../shared/services/user-details.service';
       
 })
 export class MainComponent extends AbstractFormComponent implements OnInit {
+  //POST
   posts: Post[] = [];
   httpError: any;
   
@@ -34,7 +35,7 @@ export class MainComponent extends AbstractFormComponent implements OnInit {
         this.formGroup.value['password'] !== undefined &&
         this.formGroup.value['confirmPassword'] !== undefined;
     }
-
+//POST
     doPost() {
       let post = new Post();
       post.id = 0;

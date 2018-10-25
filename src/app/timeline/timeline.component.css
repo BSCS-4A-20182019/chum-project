@@ -34,8 +34,10 @@
 .panel{
     width: 600px;
     height: 250px;
-    padding: 20px;	
-    margin-left: 60px;
+    padding: 20px;
+    margin-top: 5px;
+    margin-bottom: 30px;	
+    margin-left: 100px;
     border: solid 3px lightcoral;
 }
 img{
@@ -85,4 +87,5 @@ img{
     background-color: cadetblue;
     margin-top: 10%;
 }
+
  

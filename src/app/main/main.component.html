@@ -23,7 +23,7 @@
             <div *ngFor="let post of posts">
                 <div class="print col-sm-12"><div class="row">
                     <div class="col-sm-2">
-                        <img src="/src/assets/images/prof.png" style="width: 70px; height: 70px">
+                        <img src="/src/assets/images/img_avatar.jpg" style="width: 70px; height: 70px">
                     </div>
                     <div class="uname col-sm-9">
                         <p>{{ getComponentName() + '.uname' | translate }}</p>
@@ -34,6 +34,7 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-6 textpost">
+                        <!--DISPLAY THE VALUE IN THE TEXTAREA-->
                         <p><b>{{ post.content }}</b></p>
                     </div>
                 </div>
