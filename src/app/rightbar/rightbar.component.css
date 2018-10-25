@@ -10,7 +10,8 @@ body{
   
   
   #menu{
-    width: 600px;
+      overflow: auto;
+    width: 47%;
     height: 100%;
     padding: 25px;
     right: -100px;
@@ -26,3 +27,17 @@ body{
       background-color:white;
       border: solid 3px lightcoral;
   }
+
+@media (max-width: 990px) {
+    .global{
+        width: 70%;
+    }
+    
+}
+
+@media (max-width: 730px) {
+    #menu{
+        display: none;
+    }
+    
+}
